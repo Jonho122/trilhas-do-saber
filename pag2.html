@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos - Trilhas do Saber</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header-real">
+        <div class="logo-area">
+            <img src="./imagens/logo.png" alt="Logo do Trilhas do Saber" class="logo" />
+            <strong>Trilhas do Saber</strong>
+        </div>
+        <div class="nav-area">
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="index.html">Explorar cursos</a>
+                <a href="#trilhas">Trilhas de aprendizagem</a>
+                <a href="#destaque">Cursos em destaque</a>
+            </nav>
+            <a href="matricula.html" class="botao-jornada">Comece sua jornada</a>
+        </div>
+    </header>
+
+    <div class="breadcrumb-container">
+        <nav class="breadcrumb" aria-label="Caminho da página">
+            <a href="index.html" class="link-casa">
+                <img src="./imagens/casa.png" alt="Início" class="img-casa" /></a>
+            <span class="separador">/</span>
+            <a href="cursos.html" class="atual">Explorar cursos</a>
+        </nav>
+    </div>
+
+    <main class="container">
+
+        <section class="topo-catalogo">
+            <div>
+                <h1>Explore os cursos</h1>
+                <p>Descubra cursos gratuitos e práticos para desenvolver habilidades.</p>
+            </div>
+            <div class="busca-container">
+                <input type="text" placeholder="🔍 Buscar cursos, temas ou habilidades...">
+            </div>
+        </section>
+
+        <section class="barra-filtros">
+
+            <div class="filtros-bloco-individual">
+                <div class="grupo-filtro">
+                    <label>Nível</label>
+                    <div class="opcoes-filtro">
+                        <button class="btn-filtro ativo">Todos</button>
+                        <button class="btn-filtro">Iniciante</button>
+                        <button class="btn-filtro">Intermediário</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filtros-bloco-individual">
+                <div class="grupo-filtro">
+                    <label>Formato</label>
+                    <div class="opcoes-filtro">
+                        <button class="btn-filtro ativo">Todos</button>
+                        <button class="btn-filtro">Presencial</button>
+                        <button class="btn-filtro">On-line</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filtros-bloco-individual">
+                <div class="grupo-filtro">
+                    <label>Área</label>
+                    <div class="opcoes-filtro">
+                        <select class="select-filtro">
+                            <option>Todas as Áreas</option>
+                            <option>Tecnologia</option>
+                            <option>Gestão</option>
+                            <option>Marketing</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filtros-bloco-individual limpar-bloco">
+                <div class="grupo-filtro">
+                    <label>Ações</label>
+                    <div class="opcoes-filtro">
+                        <button class="btn-limpar">🔄 Limpar filtros</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="layout-catalogo">
+
+            <section class="coluna-cursos">
+
+                <div class="barra-contagem">
+                    <div class="quantidade-cursos">
+                        <strong>8 cursos encontrados</strong>
+                    </div>
+
+                    <div class="ordenacao-cursos">
+                        <label for="ordenar">Ordenar por:</label>
+                        <select id="ordenar">
+                            <option>Mais relevantes</option>
+                            <option>Menor duração</option>
+                            <option>Maior duração</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid-cursos">
+                    <article class="card-curso">
+                        <img src="././imagens/image2.png" alt="Imagem do curso de Introdução à Programação Web"
+                            class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Introdução à Programação Web</h3>
+                            <div class="card-meta">
+                                <span>⏱ 20h</span>
+                                <span>📶 Iniciante</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+
+                    <article class="card-curso">
+                        <img src="././imagens/image.png" alt="Imagem do curso de Gestão de Projetos" class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Gestão de Projetos na Prática</h3>
+                            <div class="card-meta">
+                                <span>⏱ 16h</span>
+                                <span>📶 Intermediário</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+
+                    <article class="card-curso">
+                        <img src="././imagens/image3.png" alt="Imagem do curso de Marketing Digital para Iniciantes"
+                            class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Marketing Digital para Iniciantes</h3>
+                            <div class="card-meta">
+                                <span>⏱ 15h</span>
+                                <span>📶 Iniciante</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+
+                    <article class="card-curso">
+                        <img src="././imagens/image4.png" alt="Imagem do curso de Design Thinking" class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Design Thinking</h3>
+                            <div class="card-meta">
+                                <span>⏱ 18h</span>
+                                <span>📶 Iniciante</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+
+                    <article class="card-curso">
+                        <img src="././imagens/image5.png" alt="Imagem do curso de Gestão de Projetos" class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Gestão de Projetos na Prática</h3>
+                            <div class="card-meta">
+                                <span>⏱ 16h</span>
+                                <span>📶 Intermediário</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+
+                    <article class="card-curso">
+                        <img src="././imagens/image8.png" alt="Imagem do curso de Desenvolvimento Web" class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Desenvolvimento Web</h3>
+                            <div class="card-meta">
+                                <span>⏱ 20h</span>
+                                <span>📶 Intermediário</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+
+                    <article class="card-curso">
+                        <img src="././imagens/image7.png" alt="Imagem do curso de Inglês para o Dia a Dia"
+                            class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Inglês para o Dia a Dia</h3>
+                            <div class="card-meta">
+                                <span>⏱ 15h</span>
+                                <span>📶 Iniciante</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+
+                    <article class="card-curso">
+                        <img src="././imagens/image6.png" alt="Imagem do curso de Culinária Saudável" class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Culinária Saudável</h3>
+                            <div class="card-meta">
+                                <span>⏱ 15h</span>
+                                <span>📶 Iniciante</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="barra-lateral">
+                <h2 class="titulo-lateral">Trilhas de Aprendizagem</h2>
+
+                <div class="card-trilha">
+                    <div class="trilha-info">
+                        <div class="trilha-icone icone-tech">
+                            <img src="./imagens/note.png" alt="Tecnologia" class="img-trilha-icone" />
+                        </div>
+                        <div class="trilha-texto">
+                            <h3>Tecnologia</h3>
+                            <span>12 cursos disponíveis</span>
+                        </div>
+                    </div>
+                    <span class="seta-trilha">➔</span>
+                </div>
+
+                <div class="card-trilha">
+                    <div class="trilha-info">
+                        <div class="trilha-icone icone-gestao">
+                            <img src="./imagens/folha.png" alt="Gestão" class="img-trilha-icone" />
+                        </div>
+                        <div class="trilha-texto">
+                            <h3>Gestão & Negócios</h3>
+                            <span>8 cursos disponíveis</span>
+                        </div>
+                    </div>
+                    <span class="seta-trilha">➔</span>
+                </div>
+
+                <div class="card-trilha">
+                    <div class="trilha-info">
+                        <div class="trilha-icone icone-marketing">
+                            <img src="./imagens/coracao.png" alt="Marketing" class="img-trilha-icone" />
+                        </div>
+                        <div class="trilha-texto">
+                            <h3>Marketing Digital</h3>
+                            <span>6 cursos disponíveis</span>
+                        </div>
+                    </div>
+                    <span class="seta-trilha">➔</span>
+                </div>
+
+                <div class="card-trilha">
+                    <div class="trilha-info">
+                        <div class="trilha-icone icone-design">
+                            <img src="./imagens/maleta.png" alt="Design" class="img-trilha-icone" />
+                        </div>
+                        <div class="trilha-texto">
+                            <h3>Design & UX</h3>
+                            <span>5 cursos disponíveis</span>
+                        </div>
+                    </div>
+                    <span class="seta-trilha">➔</span>
+                </div>
+
+                <a href="#" class="link-ver-trilhas">
+                    Ver todas as trilhas disponíveis <span>⟶</span>
+                </a>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer-principal">
+        <div class="footer-container">
+
+            <div class="footer-coluna logo-redes">
+                <div class="logo-area-footer">
+                    <span>🎓</span>
+                    <strong>Trilhas do Saber</strong>
+                </div>
+                <p class="footer-tagline">Aprendizado acessível para todos. Conhecimento que transforma.</p>
+                <div class="redes-sociais">
+                    <a href="#" aria-label="Ir para o Facebook"><img src="././imagens/facebook.png" alt="Facebook"></a>
+                    <a href="#" aria-label="Ir para o Instagram"><img src="././imagens/instagram.png"
+                            alt="Instagram"></a>
+                    <a href="#" aria-label="Ir para o YouTube"><img src="././imagens/youtube.png" alt="YouTube"></a>
+                    <a href="#" aria-label="Ir para o LinkedIn"><img src="././imagens/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Navegue</h3>
+                <ul>
+                    <li><a href="cursos.html">Explorar cursos</a></li>
+                    <li><a href="#trilhas">Trilhas de aprendizagem</a></li>
+                    <li><a href="#destaque">Cursos em destaque</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">Como funciona</a></li>
+                    <li><a href="#">Perguntas frequentes</a></li>
+                    <li><a href="#">Certificados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Sobre</h3>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Nossa missão</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna newsletter">
+                <h3>Newsletter</h3>
+                <p>Receba novidades e dicas de aprendizado.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail">
+                    <button type="button">Inscrever-se</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-inferior">
+            <p>&copy; 2026 Trilhas do Saber. Todos os direitos reservados.</p>
+            <div class="links-legais">
+                <a href="#">Termos de uso</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Acessibilidade</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
