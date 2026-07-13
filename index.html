@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Início - Trilhas do Saber</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- HEADER GLOBAL (Igual ao de cursos.html) -->
+    <header class="header-real">
+        <div class="logo-area">
+            <img src="./imagens/logo.png" alt="Logo do Trilhas do Saber" class="logo" />
+            <strong>Trilhas do Saber</strong>
+        </div>
+        <div class="nav-area">
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="cursos.html">Explorar cursos</a>
+                <a href="#trilhas">Trilhas de aprendizagem</a>
+                <a href="#destaque">Cursos em destaque</a>
+            </nav>
+            <a href="matricula.html" class="botao-jornada">Comece sua jornada</a>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO EXCLUSIVO DA HOME -->
+    <main class="container">
+        <!-- SEÇÃO 1: HERO / BANNER PRINCIPAL -->
+        <section class="topo-catalogo hero-home">
+            <div class="hero-conteudo">
+                <h1>Aprenda no seu ritmo,<br><span class="texto-azul">avance com propósito</span></h1>
+                <p>Cursos gratuitos, práticos e objetivos para desenvolver habilidades, impulsionar sua carreira e transformar seu futuro.</p>
+                <a href="cursos.html" class="btn-explorar">Explorar cursos ➔</a>
+            </div>
+            <div class="hero-imagem">
+                <img src="./imagens/grupo-estudantes.png" alt="Estudantes usando notebook" />
+            </div>
+        </section>
+        <!-- SEÇÃO 2: GRID DE TRILHAS (PÁGINA INICIAL) -->
+        <section>
+            <h2 class="titulo-sessao">Trilhas de aprendizagem</h2>
+            <div class="grid-trilhas-home">
+                
+                <div class="card-trilha-grade cor-tech">
+                    <!-- Adicionada a classe padrão de contêiner de ícone e a classe da imagem -->
+                    <div class="trilha-icone icone-tech">
+                        <img src="./imagens/maleta.png" alt="Ícone de maleta" class="img-trilha-icone" />
+                    </div>
+                    <div class="texto-trilha-home">
+                        <h3>Tecnologia e Dados</h3>
+                        <p>Desenvolva habilidades digitais para o futuro.</p>
+                    </div>
+                </div>
+
+                <div class="card-trilha-grade cor-gestao">
+                    <div class="trilha-icone icone-gestao">
+                        <img src="./imagens/note.png" alt="Ícone de notebook" class="img-trilha-icone" />
+                    </div>
+                    <div class="texto-trilha-home">
+                        <h3>Carreira e Negócios</h3>
+                        <p>Fortaleça sua carreira e empreenda com confiança.</p>
+                    </div>
+                </div>
+
+                <div class="card-trilha-grade cor-marketing">
+                    <div class="trilha-icone icone-marketing">
+                        <img src="./imagens/folha.png" alt="Ícone de folha" class="img-trilha-icone" />
+                    </div>
+                    <div class="texto-trilha-home">
+                        <h3>Marketing e Comunicação</h3>
+                        <p>Aprenda a comunicar ideias e gerar valor.</p>
+                    </div>
+                </div>
+
+                <div class="card-trilha-grade cor-pessoal">
+                    <!-- Caso não tenha a classe icone-pessoal no seu CSS, ela vai herdar o comportamento de .trilha-icone perfeitamente -->
+                    <div class="trilha-icone icone-pessoal">
+                        <img src="./imagens/coracao.png" alt="Ícone de coração" class="img-trilha-icone" />
+                    </div>
+                    <div class="texto-trilha-home">
+                        <h3>Desenvolvimento Pessoal</h3>
+                        <p>Cresça como pessoa, lidere sua jornada.</p>
+                    </div>
+                </div>
+
+                <div class="card-trilha-grade cor-sustentavel">
+                    <div class="trilha-icone icone-sustentavel">
+                        <img src="./imagens/facebook.png" alt="Ícone de facebook" class="img-trilha-icone" />
+                    </div>
+                    <div class="texto-trilha-home">
+                        <h3>Sustentabilidade e Impacto</h3>
+                        <p>Atue por um mundo mais consciente e equilibrado.</p>
+                    </div>
+                </div>
+
+                <div class="card-trilha-grade cor-idiomas">
+                    <div class="trilha-icone icone-design"> <!-- Reutilizando a classe icone-design da outra página se necessário -->
+                        <img src="./imagens/youtube.png" alt="Ícone de youtube" class="img-trilha-icone" />
+                    </div>
+                    <div class="texto-trilha-home">
+                        <h3>Educação e Idiomas</h3>
+                        <p>Amplie seus horizons e conhecimentos.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- SEÇÃO 3: DOIS BLOCOS SIMULTÂNEOS (CURSOS DESTAQUE VS BARRA LATERAL) -->
+        <div class="layout-catalogo layout-home">
+            <!-- Coluna da Esquerda: Cursos em Destaque -->
+            <section class="coluna-cursos" id="destaque">
+                <h2 class="titulo-sessao">Cursos em destaque</h2>
+                <div class="grid-cursos">
+                    <article class="card-curso">
+                        <img src="./imagens/image2.png" alt="Imagem do curso de Análise de Dados" class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Introdução à Análise de Dados</h3>
+                            <div class="card-meta">
+                                <span>⏱ 4h</span>
+                                <span>📶 Iniciante</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+                    <article class="card-curso">
+                        <img src="./imagens/image3.png" alt="Imagem do curso de Comunicação" class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Comunicação Eficaz</h3>
+                            <div class="card-meta">
+                                <span>⏱ 3h</span>
+                                <span>📶 Iniciante</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+                    <article class="card-curso">
+                        <img src="./imagens/image.png" alt="Imagem do curso de Gestão de Tempo" class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Gestão de Tempo e Produtividade</h3>
+                            <div class="card-meta">
+                                <span>⏱ 2h</span>
+                                <span>📶 Iniciante</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+                    <article class="card-curso">
+                        <img src="./imagens/image4.png" alt="Imagem do curso de Pensamento Lógico" class="card-img">
+                        <div class="card-conteudo">
+                            <h3>Introdução ao Pensamento Lógico</h3>
+                            <div class="card-meta">
+                                <span>⏱ 3h</span>
+                                <span>📶 Iniciante</span>
+                                <span>🌐 On-line</span>
+                            </div>
+                            <a href="matricula.html" class="link-curso">Ver curso →</a>
+                        </div>
+                    </article>
+                    <a href="cursos.html" class="link-ver-todas-home">Ver todos os cursos ⟶</a>
+<!-- SEÇÃO DE DEPOIMENTOS!-->
+            <section class="depoimentos-section">
+                        <h2 class="titulo-sessao">O que nossos estudantes dizem</h2>
+                        <div class="depoimentos-container">
+                            <div class="grid-depoimentos">
+                                <div class="card-depoimento">
+                                    <img src="./imagens/estudante.png" alt="Paula S." class="foto-estudante" />
+                                    <div class="depoimento-conteudo">
+                                        <p>“Os cursos me ajudaram a organizar minhas ideias e conquistar uma nova oportunidade na minha carreira.”</p>
+                                        <strong>Paula S.</strong>
+                                        <span>Analista de Marketing</span>
+                                    </div>
+                                </div>
+                                <div class="card-depoimento">
+                                    <img src="./imagens/estudante2.png" alt="Carlos M." class="foto-estudante" />
+                                    <div class="depoimento-conteudo">
+                                        <p>“Conteúdos objetivos e práticos que realmente fazem a diferença no dia a dia. Recomendo para todos!”</p>
+                                        <strong>Carlos M.</strong>
+                                        <span>Empreendedor</span>
+                                    </div>
+                                </div>
+
+                                <!-- Depoimento 3 -->
+                                <div class="card-depoimento">
+                                    <img src="./imagens/estudante3.png" alt="Juliana R." class="foto-estudante" />
+                                    <div class="depoimento-conteudo">
+                                        <p>“Aprendi no meu ritmo, com qualidade e de forma gratuita. Isso transforma vidas!”</p>
+                                        <strong>Juliana R.</strong>
+                                        <span>Estudante</span>
+                                    </div>
+                                </div>
+
+                                <!-- Depoimento 4 -->
+                                <div class="card-depoimento">
+                                    <img src="./imagens/estudante4.png" alt="Fernando A." class="foto-estudante" />
+                                    <div class="depoimento-conteudo">
+                                        <p>“Plataforma acessível, organizada e motivadora. Parabéns pela iniciativa!”</p>
+                                        <strong>Fernando A.</strong>
+                                        <span>Professor</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Pontinhos indicadores de paginação -->
+                            <div class="depoimentos-paginacao">
+                                <span class="ponto ativo"></span>
+                                <span class="ponto"></span>
+                                <span class="ponto"></span>
+                                <span class="ponto"></span>
+                            </div>
+                        </div>
+                    </section>
+            </section>
+            <!-- Coluna da Direita: Progresso e Chamada para Ação -->
+            <aside class="barra-lateral">
+                <div class="bloco-progresso">
+                    <h2 class="titulo-lateral">Sua trilha de progresso</h2>
+                    <ol class="lista-progresso-home">
+                        <li class="passo-feito">
+                            <strong>1. Escolha sua trilha</strong>
+                            <p>Descubra o que combina com você</p>
+                        </li>
+                        <li class="passo-feito">
+                            <strong>2. Inicie um curso</strong>
+                            <p>Comece com conteúdos rápidos e práticos</p>
+                        </li>
+                        <li class="passo-feito">
+                            <strong>3. Pratique e aplique</strong>
+                            <p>Exercite o que aprende no seu dia a dia</p>
+                        </li>
+                        <li>
+                            <strong>4. Acompanhe seu progresso</strong>
+                            <p>Veja sua evolução e celebre conquistas</p>
+                        </li>
+                        <li>
+                            <strong>5. Conquiste sua certificação</strong>
+                            <p>Finalize e compartilhe suas habilidades</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="card-jornada-home-aviso">
+                    <span class="jornada-icone-svg">🎓</span>
+                    <div class="jornada-texto-home">
+                        <h3>Comece sua jornada</h3>
+                        <p>Milhares de pessoas já começaram. O próximo passo é seu.</p>
+                        <a href="matricula.html" class="botao-jornada-amarelo">Comece agora ➔</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER GLOBAL (Igual ao de cursos.html) -->
+    <footer class="footer-principal">
+        <div class="footer-container">
+            <div class="footer-coluna logo-redes">
+                <div class="logo-area-footer">
+                    <span>🎓</span>
+                    <strong>Trilhas do Saber</strong>
+                </div>
+                <p class="footer-tagline">Aprendizado acessível para todos. Conhecimento que transforma.</p>
+                <div class="redes-sociais">
+                    <a href="#" aria-label="Ir para o Facebook"><img src="././imagens/facebook.png" alt="Facebook"></a>
+                    <a href="#" aria-label="Ir para o Instagram"><img src="././imagens/instagram.png" alt="Instagram"></a>
+                    <a href="#" aria-label="Ir para o YouTube"><img src="././imagens/youtube.png" alt="YouTube"></a>
+                    <a href="#" aria-label="Ir para o LinkedIn"><img src="././imagens/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Navegue</h3>
+                <ul>
+                    <li><a href="cursos.html">Explorar cursos</a></li>
+                    <li><a href="#trilhas">Trilhas de aprendizagem</a></li>
+                    <li><a href="#destaque">Cursos em destaque</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">Como funciona</a></li>
+                    <li><a href="#">Perguntas frequentes</a></li>
+                    <li><a href="#">Certificados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Sobre</h3>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Nossa missão</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna newsletter">
+                <h3>Newsletter</h3>
+                <p>Receba novidades e dicas de aprendizado.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail">
+                    <button type="button">Inscrever-se</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-inferior">
+            <p>&copy; 2026 Trilhas do Saber. Todos os direitos reservados.</p>
+            <div class="links-legais">
+                <a href="#">Termos de uso</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Acessibilidade</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
