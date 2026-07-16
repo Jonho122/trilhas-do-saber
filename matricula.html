@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Interfaces Web - Trilhas do Saber</title>
+    <!-- Vincula ao mesmo arquivo CSS unificado do projeto -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-real">
+        <div class="logo-area">
+            <img src="./imagens/logo.png" alt="Logo do Trilhas do Saber" class="logo" />
+            <strong>Trilhas do Saber</strong>
+        </div>
+        <div class="nav-area">
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="cursos.html">Explorar cursos</a>
+                <a href="#trilhas">Trilhas de aprendizagem</a>
+                <a href="#destaque">Cursos em destaque</a>
+            </nav>
+            <a href="matricula.html" class="botao-jornada">Comece sua jornada</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Breadcrumb unificado com o padrão do cursos.html -->
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb" aria-label="Caminho da página">
+                <a href="index.html" class="link-casa">
+                    <img src="./imagens/casa.png" alt="Início" class="img-casa" />
+                </a>
+                <span class="separador">/</span>
+                <a href="cursos.html">Explorar cursos</a>
+                <span class="separador">/</span>
+                <a href="matricula.html" class="atual" aria-current="page">Matrícula</a>
+            </nav>
+        </div>
+
+        <!-- Layout de duas colunas principal -->
+        <div class="layout-catalogo">
+            
+            <!-- COLUNA DA ESQUERDA (Conteúdo Principal do Curso) -->
+            <div class="coluna-conteudo-curso">
+
+                <section class="topo-catalogo hero-home">
+                    <div class="hero-conteudo">
+                        <span class="categoria-curso">DESIGN E DESENVOLVIMENTO</span>
+                        <h1>Fundamentos de Interfaces Web</h1>
+                        <p>Aprenda os princípios essenciais de design de interfaces e crie páginas web modernas, acessíveis e centradas no usuário.</p>
+                    </div>
+                    <div class="hero-imagem">
+                        <img src="./imagens/estnote.png" alt="Estudante sorrindo usando notebook" loading="lazy" />
+                    </div>
+                </section>
+
+                <!-- Metadados rápidos do Curso -->
+                <div class="meta-rapida-curso">
+                    <div class="meta-item">
+                        <span class="meta-icone">⏱</span>
+                        <div>
+                            <strong>Carga horária</strong>
+                            <p>20 horas</p>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icone">📶</span>
+                        <div>
+                            <strong>Nível</strong>
+                            <p>Iniciante</p>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icone">🎓</span>
+                        <div>
+                            <strong>Certificado</strong>
+                            <p>Incluso</p>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icone">▶</span>
+                        <div>
+                            <strong>Acesso</strong>
+                            <p>Imediato</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- O que você vai aprender -->
+                <section class="topicos-aprendizado">
+                    <h2 class="subtitulo-detalhe">O que você vai aprender</h2>
+                    <div class="grid-aprendizado">
+                        <div class="card-aprendizado">
+                            <span class="icone-aprendizado-wrapper">💻</span>
+                            <p>Entender os conceitos fundamentais de interfaces web.</p>
+                        </div>
+                        <div class="card-aprendizado">
+                            <span class="icone-aprendizado-wrapper">📱</span>
+                            <p>Criar layouts responsivos e adaptáveis.</p>
+                        </div>
+                        <div class="card-aprendizado">
+                            <span class="icone-aprendizado-wrapper">♿</span>
+                            <p>Aplicar princípios de acessibilidade e usabilidade.</p>
+                        </div>
+                        <div class="card-aprendizado">
+                            <span class="icone-aprendizado-wrapper">&lt;/&gt;</span>
+                            <p>Utilizar HTML e CSS para construir interfaces modernas.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Módulos (Acordeão) -->
+                <section class="modulos-curso">
+                    <h2 class="subtitulo-detalhe">Módulos</h2>
+                    <div class="lista-modulos linha-conectora">
+                        <div class="item-modulo">
+                            <span class="numero-modulo">1</span>
+                            <div class="item-modulo-titulo">
+                                <span class="titulo-texto">1. Introdução ao Design de Interfaces</span>
+                                <span class="tempo-modulo">3 horas ▾</span>
+                            </div>
+                        </div>
+                        <div class="item-modulo">
+                            <span class="numero-modulo">2</span>
+                            <div class="item-modulo-titulo">
+                                <span class="titulo-texto">2. HTML para Interfaces</span>
+                                <span class="tempo-modulo">4 horas ▾</span>
+                            </div>
+                        </div>
+                        <div class="item-modulo">
+                            <span class="numero-modulo">3</span>
+                            <div class="item-modulo-titulo">
+                                <span class="titulo-texto">3. Estilização com CSS</span>
+                                <span class="tempo-modulo">5 horas ▾</span>
+                            </div>
+                        </div>
+                        <div class="item-modulo">
+                            <span class="numero-modulo">4</span>
+                            <div class="item-modulo-titulo">
+                                <span class="titulo-texto">4. Layout Responsivo</span>
+                                <span class="tempo-modulo">4 horas ▾</span>
+                            </div>
+                        </div>
+                        <div class="item-modulo">
+                            <span class="numero-modulo">5</span>
+                            <div class="item-modulo-titulo">
+                                <span class="titulo-texto">5. Acessibilidade e Usabilidade</span>
+                                <span class="tempo-modulo">4 horas ▾</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Área do Instrutor e Estatísticas Integradas (Unificados em um único Card) -->
+                <section class="instrutor-e-stats-container">
+                    <div class="perfil-instrutor">
+                        <img src="./imagens/image3.png" alt="Foto de Lucas Andrade, instrutor do curso" class="foto-instrutor" loading="lazy">
+                        <div class="instrutor-texto">
+                            <span class="badge-instrutor">Instrutor</span>
+                            <h3>Lucas Andrade</h3>
+                            <p>Designer de interfaces com 8 anos de experiência em projetos web e educador apaixonado por ensinar design e tecnologia.</p>
+                        </div>
+                    </div>
+                    <div class="stats-curso">
+                        <div class="stat-box">
+                            <span class="stat-icone">⭐</span>
+                            <div>
+                                <strong>4,9</strong>
+                                <p>Avaliação</p>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-icone">👥</span>
+                            <div>
+                                <strong>2.350+</strong>
+                                <p>Alunos</p>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-icone">▶</span>
+                            <div>
+                                <strong>28</strong>
+                                <p>Cursos</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div> <!-- Fim da coluna-conteudo-curso -->
+
+            <!-- COLUNA DA DIREITA (Matrícula + Turmas Disponíveis) -->
+            <aside class="barra-lateral">
+                
+                <!-- Card de Matrícula (Formulário Completo) -->
+                <div class="card-formulario-matricula">
+                    <h2 class="titulo-lateral-form">Matricule-se</h2>
+                    
+                    <div class="preco-tag">
+                        <strong>R$ 0,00</strong>
+                        <span class="tag-gratis">Curso Gratuito</span>
+                        <p class="preco-detalhe">Acesso ilimitado por 90 dias.</p>
+                    </div>
+
+                    <form action="#" method="POST" class="form-matricula">
+                        <fieldset>
+                            <legend>Seus dados</legend>
+                            
+                            <div class="campo-grupo">
+                                <label for="nome">Nome completo</label>
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" autocomplete="name" required minlength="3" aria-required="true">
+                            </div>
+
+                            <div class="campo-grupo">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocomplete="email" required aria-required="true">
+                            </div>
+
+                            <div class="campo-grupo">
+                                <label for="cpf">CPF</label>
+                                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required aria-required="true" title="Digite um CPF válido no formato 000.000.000-00">
+                            </div>
+
+                            <div class="campo-checkbox">
+                                <input type="checkbox" id="novidades" name="novidades" checked>
+                                <label for="novidades">Quero receber novidades e dicas de aprendizagem.</label>
+                            </div>
+
+                            <button type="submit" class="botao-confirmar-matricula">Confirmar matrícula ➔</button>
+                            <span class="seguranca-aviso">🔒 Seus dados estão seguros conosco.</span>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- Tabela Semântica de Turmas -->
+                <div class="card-turmas">
+                    <h3 class="titulo-lateral-tabela">Turmas disponíveis</h3>
+                    
+                    <table class="tabela-turmas">
+                        <caption>Próximas turmas com vagas para acompanhamento síncrono</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Turma</th>
+                                <th scope="col">Início</th>
+                                <th scope="col">Dias</th>
+                                <th scope="col">Horário</th>
+                                <th scope="col">Vagas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Turma 01</th>
+                                <td>27/05/2025</td>
+                                <td>Seg e Qui</td>
+                                <td>19:00 - 21:00</td>
+                                <td>25 vagas</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Turma 02</th>
+                                <td>03/06/2025</td>
+                                <td>Ter e Qui</td>
+                                <td>09:00 - 11:00</td>
+                                <td>30 vagas</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Turma 03</th>
+                                <td>10/06/2025</td>
+                                <td>Seg, Qua e Sex</td>
+                                <td>14:00 - 16:00</td>
+                                <td>20 vagas</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Turma 04</th>
+                                <td>17/06/2025</td>
+                                <td>Sáb</td>
+                                <td>10:00 - 14:00</td>
+                                <td>25 vagas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="aviso-tabela">
+                        <span class="aviso-icone">ℹ</span>
+                        <p><strong>Não encontrou o horário ideal?</strong> Novas turmas em breve. Inscreva-se e seja avisado!</p>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div> <!-- Fim do layout-catalogo -->
+    </main>
+
+    <footer class="footer-principal">
+        <div class="footer-container">
+            <div class="footer-coluna logo-redes">
+                <div class="logo-area-footer">
+                    <img src="./imagens/logo.png" alt="Logo do Trilhas do Saber" class="logo" />
+                    <strong>Trilhas do Saber</strong>
+                </div>
+                <p class="footer-tagline">Aprendizado acessível para todos. Conhecimento que transforma.</p>
+                <div class="redes-sociais">
+                    <a href="#" aria-label="Ir para o Facebook"><img src="./imagens/facebook.png" alt="Facebook"></a>
+                    <a href="#" aria-label="Ir para o Instagram"><img src="./imagens/instagram.png" alt="Instagram"></a>
+                    <a href="#" aria-label="Ir para o YouTube"><img src="./imagens/youtube.png" alt="YouTube"></a>
+                    <a href="#" aria-label="Ir para o LinkedIn"><img src="./imagens/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Navegue</h3>
+                <ul>
+                    <li><a href="cursos.html">Explorar cursos</a></li>
+                    <li><a href="#trilhas">Trilhas de aprendizagem</a></li>
+                    <li><a href="#destaque">Cursos em destaque</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">Como funciona</a></li>
+                    <li><a href="#">Perguntas frequentes</a></li>
+                    <li><a href="#">Certificados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Sobre</h3>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Nossa missão</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna newsletter">
+                <h3>Newsletter</h3>
+                <p>Receba novidades e dicas de aprendizado.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail para newsletter">
+                    <button type="button">Inscrever-se</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-inferior">
+            <p>&copy; 2026 Trilhas do Saber. Todos os direitos reservados.</p>
+            <div class="links-legais">
+                <a href="#">Termos de uso</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Acessibilidade</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

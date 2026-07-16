@@ -69,7 +69,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 4rem;
+  padding: 1rem 4rem; 
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 .logo{
@@ -306,9 +306,10 @@ p {
    6. LAYOUT DUAS COLUNAS E CARDS
    ========================================================================== */
 .layout-catalogo {
-  display: grid;
-  grid-template-columns: 3.8fr 1fr; 
-  gap: 2rem;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 48px;
 }
 
 .coluna-cursos {
@@ -316,7 +317,9 @@ p {
   flex-direction: column;
   gap: 1rem;
 }
-
+.coluna-conteudo-curso {
+  flex: 1.8;              /* Ocupa a maior parte do espaço */
+}
 .barra-contagem {
   display: flex;
   justify-content: space-between; 
@@ -423,6 +426,8 @@ p {
   border-radius: 0.75rem;
   height: fit-content;
   display: flex;
+  flex: 1;
+  min-width: 360px;                 /* Largura mínima para não quebrar o layout */
   flex-direction: column;
   gap: 0.5rem;                    /* Espaçamento entre os cards brancos */
 }
@@ -1078,5 +1083,496 @@ p {
 @media (max-width: 640px) {
   .grid-depoimentos {
     grid-template-columns: 1fr;
+  }
+}
+/* ==========================================================================
+   CSS DA PÁGINA DE DETALHES DO CURSO (MATRÍCULA) - OTIMIZADO
+   ========================================================================== */
+
+.categoria-curso {
+  color: #00a896;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* Coluna Principal do Curso (Esquerda) */
+.coluna-conteudo-curso {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.categoria-tag {
+  color: #00a3b4;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.titulo-curso-pagina {
+  font-size: 2.2rem;
+  color: #091d34;
+  margin: 0;
+  font-weight: 800;
+}
+
+.descricao-curso-pagina {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Metadados rápidos */
+.meta-rapida-curso {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background: #f8fafc;
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.meta-item span {
+  font-size: 1.5rem;
+}
+.meta-item strong {
+  display: block;
+  font-size: 0.8rem;
+  color: #1e293b;
+}
+.meta-item p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Banner */
+.banner-curso-container {
+  margin: 0;
+  width: 100%;
+}
+.banner-curso-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Seções Internas */
+.subtitulo-detalhe {
+  font-size: 1.3rem;
+  color: #091d34;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* O que você vai aprender (Grid) */
+.grid-aprendizado {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 15px;
+}
+.card-aprendizado {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 16px;
+  gap: 16px;
+}
+.icone-aprendizado-wrapper {
+  background-color: #e0f2f1; /* Círculo verde suave */
+  color: #00a896;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.card-aprendizado p {
+  font-size: 0.9rem;
+  color: #495057;
+  margin: 0;
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* Linha do Tempo dos Módulos */
+.lista-modulos.linha-conectora {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+/* Linha vertical por trás das bolinhas */
+.lista-modulos.linha-conectora::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 17px; /* Alinhamento centralizado com os 34px da bolinha */
+  width: 2px;
+  background-color: #00a896;
+  z-index: 1;
+}
+.item-modulo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 2;
+}
+.titulo-texto {
+  font-size: 0.95rem;
+  color: #212529;
+  font-weight: 500;
+}
+.tempo-modulo {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+.numero-modulo {
+  position: relative;
+  z-index: 3;
+  background-color: #00a896;
+  color: #ffffff;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.95rem;
+  box-shadow: 0 0 0 4px #ffffff;
+}
+.item-modulo-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 12px 20px;
+}
+
+/* Instrutor e Stats Integrados */
+.instrutor-e-stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 30px;
+  gap: 30px;
+}
+.perfil-instrutor {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1.2;
+}
+.foto-instrutor {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.badge-instrutor {
+  font-size: 0.75rem;
+  color: #00a3b4;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.instrutor-texto h3 {
+  margin: 0.2rem 0;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+.instrutor-texto p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.4;
+}
+.stats-curso {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  border-left: 1px solid #e9ecef;
+  padding-left: 30px;
+}
+.stat-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.stat-box strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+.stat-box p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+.stat-icone {
+  font-size: 1.5rem;
+  color: #00a896;
+}
+
+/* ==========================================================================
+   FORMULÁRIO DE MATRÍCULA
+   ========================================================================== */
+.card-formulario-matricula {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem; /* Margem para separar da tabela de turmas abaixo */
+}
+
+.titulo-lateral-form {
+  font-size: 1.4rem;
+  color: #091d34;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.preco-tag {
+  background: #f0fdfa;
+  border: 1px dashed #00a3b4;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+.preco-tag strong {
+  font-size: 1.6rem;
+  color: #00a3b4;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.tag-gratis {
+  background: #ccfbf1;
+  color: #0d9488;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.preco-detalhe {
+  margin: 0.4rem 0 0 0;
+  font-size: 0.8rem;
+  color: #475569;
+}
+
+.form-matricula fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.form-matricula legend {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.campo-grupo label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #475569;
+}
+.campo-grupo input {
+  padding: 0.7rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Validações Visuais Nativas do CSS */
+.campo-grupo input:focus-visible {
+  outline: none;
+  border-color: #00a3b4;
+  box-shadow: 0 0 0 3px rgba(0, 163, 180, 0.15);
+}
+.campo-grupo input:focus:invalid {
+  border-color: #ef4444;
+}
+.campo-grupo input:focus:valid {
+  border-color: #10b981;
+}
+
+.campo-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.campo-checkbox label {
+  font-size: 0.75rem;
+  color: #475569;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.botao-confirmar-matricula {
+  width: 100%;
+  background: #ff5e5b;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.botao-confirmar-matricula:hover {
+  background: #e04f4c;
+}
+
+.seguranca-aviso {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 0.8rem;
+}
+
+/* ==========================================================================
+   TABELA SEMÂNTICA
+   ========================================================================== */
+.card-turmas {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.titulo-lateral-tabela {
+  font-size: 1.1rem;
+  color: #091d34;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.tabela-turmas {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+/* Oculta o caption visualmente mantendo a acessibilidade */
+.tabela-turmas caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.tabela-turmas th, 
+.tabela-turmas td {
+  padding: 0.6rem 0.4rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.tabela-turmas thead th {
+  color: #64748b;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tabela-turmas tbody th {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.tabela-turmas tbody td {
+  color: #475569;
+}
+
+.aviso-tabela {
+  display: flex;
+  gap: 0.5rem;
+  background: #f0fdfa;
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+.aviso-icone {
+  color: #00a3b4;
+  font-weight: bold;
+}
+.aviso-tabela p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #042f2e;
+  line-height: 1.3;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (Ajustes de Grid)
+   ========================================================================== */
+@media (max-width: 900px) {
+  .meta-rapida-curso {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-aprendizado {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .meta-rapida-curso {
+    grid-template-columns: 1fr;
+  }
+  .grid-aprendizado {
+    grid-template-columns: 1fr;
+  }
+  .instrutor-e-stats-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .stats-curso {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    border-left: none;
+    border-top: 1px solid #e9ecef;
+    padding-left: 0;
+    padding-top: 1.5rem;
+    width: 100%;
   }
 }
