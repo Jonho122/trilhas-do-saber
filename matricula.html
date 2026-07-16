@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos de Interfaces Web - Trilhas do Saber</title>
     <!-- Vincula ao mesmo arquivo CSS unificado do projeto -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/matricula.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cursos.css">
+    
 </head>
 <body>
     <header class="header-real">
@@ -23,7 +26,7 @@
         </div>
     </header>
 
-    <main class="container">
+    <main class="container-matricula">
         <!-- Breadcrumb unificado com o padrão do cursos.html -->
         <div class="breadcrumb-container">
             <nav class="breadcrumb" aria-label="Caminho da página">
@@ -43,67 +46,70 @@
             <!-- COLUNA DA ESQUERDA (Conteúdo Principal do Curso) -->
             <div class="coluna-conteudo-curso">
 
-                <section class="topo-catalogo hero-home">
-                    <div class="hero-conteudo">
-                        <span class="categoria-curso">DESIGN E DESENVOLVIMENTO</span>
-                        <h1>Fundamentos de Interfaces Web</h1>
-                        <p>Aprenda os princípios essenciais de design de interfaces e crie páginas web modernas, acessíveis e centradas no usuário.</p>
-                    </div>
-                    <div class="hero-imagem">
-                        <img src="./imagens/estnote.png" alt="Estudante sorrindo usando notebook" loading="lazy" />
+                <section class="topo-catalogo topo-home">
+                    <div class="topo-conteudo">
+                        <!-- Coluna da Esquerda -->
+                        <div class="texto-topo">
+                            <div>
+                            <span class="categoria-curso">DESIGN E DESENVOLVIMENTO</span>
+                            <h1>Fundamentos de Interfaces Web</h1>
+                            <p>Aprenda os princípios essenciais de design de interfaces e crie páginas web modernas, acessíveis e centradas no usuário.</p>
+                            </div>
+                            <div class="meta-rapida-curso">
+                                <div class="meta-item">
+                                    <img src="./imagens/note.png" alt="Ícone" class="meta-icone" />
+                                    <div>
+                                        <strong>Carga horária</strong>
+                                        <p>20 horas</p>
+                                    </div>
+                                </div>
+                                <div class="meta-item">
+                                    <img src="./imagens/folha.png" alt="Ícone" class="meta-icone" />
+                                    <div>
+                                        <strong>Nível</strong>
+                                        <p>Iniciante</p>
+                                    </div>
+                                </div>
+                                <div class="meta-item">
+                                    <img src="./imagens/coracao.png" alt="Ícone" class="meta-icone" />
+                                    <div>
+                                        <strong>Certificado</strong>
+                                        <p>Incluso</p>
+                                    </div>
+                                </div>
+                                <div class="meta-item">
+                                    <img src="./imagens/casa.png" alt="Ícone" class="meta-icone" />
+                                    <div>
+                                        <strong>Acesso</strong>
+                                        <p>Imediato</p>
+                                    </div>
+                                </div>
+                            </div> 
+
+                        </div>
+
+                        <img class="visual-imagem" src="./imagens/estnote.png" alt="Estudante sorrindo..." loading="lazy" />
+                        
                     </div>
                 </section>
-
-                <!-- Metadados rápidos do Curso -->
-                <div class="meta-rapida-curso">
-                    <div class="meta-item">
-                        <span class="meta-icone">⏱</span>
-                        <div>
-                            <strong>Carga horária</strong>
-                            <p>20 horas</p>
-                        </div>
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-icone">📶</span>
-                        <div>
-                            <strong>Nível</strong>
-                            <p>Iniciante</p>
-                        </div>
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-icone">🎓</span>
-                        <div>
-                            <strong>Certificado</strong>
-                            <p>Incluso</p>
-                        </div>
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-icone">▶</span>
-                        <div>
-                            <strong>Acesso</strong>
-                            <p>Imediato</p>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- O que você vai aprender -->
                 <section class="topicos-aprendizado">
                     <h2 class="subtitulo-detalhe">O que você vai aprender</h2>
                     <div class="grid-aprendizado">
                         <div class="card-aprendizado">
-                            <span class="icone-aprendizado-wrapper">💻</span>
+                            <img src="./imagens/maleta.png" alt="Ícone de maleta" class="icone-aprendizado-wrapper" />
                             <p>Entender os conceitos fundamentais de interfaces web.</p>
                         </div>
                         <div class="card-aprendizado">
-                            <span class="icone-aprendizado-wrapper">📱</span>
+                            <img src="./imagens/folha.png" alt="Ícone de folha" class="icone-aprendizado-wrapper" />
                             <p>Criar layouts responsivos e adaptáveis.</p>
                         </div>
                         <div class="card-aprendizado">
-                            <span class="icone-aprendizado-wrapper">♿</span>
+                            <img src="./imagens/note.png" alt="Ícone de notebook" class="icone-aprendizado-wrapper" />
                             <p>Aplicar princípios de acessibilidade e usabilidade.</p>
                         </div>
                         <div class="card-aprendizado">
-                            <span class="icone-aprendizado-wrapper">&lt;/&gt;</span>
+                            <img src="./imagens/coracao.png" alt="Ícone de coração" class="icone-aprendizado-wrapper" />
                             <p>Utilizar HTML e CSS para construir interfaces modernas.</p>
                         </div>
                     </div>
@@ -207,7 +213,8 @@
                             
                             <div class="campo-grupo">
                                 <label for="nome">Nome completo</label>
-                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" autocomplete="name" required minlength="3" aria-required="true">
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" 
+                                autocomplete="name" required minlength="3" aria-required="true">
                             </div>
 
                             <div class="campo-grupo">
@@ -217,7 +224,8 @@
 
                             <div class="campo-grupo">
                                 <label for="cpf">CPF</label>
-                                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required aria-required="true" title="Digite um CPF válido no formato 000.000.000-00">
+                                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" 
+                                required aria-required="true" title="Digite um CPF válido no formato 000.000.000-00">
                             </div>
 
                             <div class="campo-checkbox">
@@ -290,7 +298,7 @@
     </main>
 
     <footer class="footer-principal">
-        <div class="footer-container">
+        <div class="footer-container-m">
             <div class="footer-coluna logo-redes">
                 <div class="logo-area-footer">
                     <img src="./imagens/logo.png" alt="Logo do Trilhas do Saber" class="logo" />
